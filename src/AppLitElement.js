@@ -1,6 +1,5 @@
 import { LitElement, html, css } from 'lit';
-
-const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
+import './components/header-app/header-app'
 
 export class AppLitElement extends LitElement {
   static get properties() {
@@ -20,7 +19,8 @@ export class AppLitElement extends LitElement {
 
   render() {
     return html`
-      App Lit Element!
+    <header-app title-app="Aplicacion en LitElement"></header-app>
+      Application Lit Element!
     `;
   }
 }
